@@ -1,3 +1,19 @@
+<script>
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  });
+</script>
+
 <style>
   h1,
   figure,
@@ -36,6 +52,9 @@
 
 <svelte:head>
   <title>Tom's Page</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+
+  </script>
 </svelte:head>
 
 <h1>You made it!!</h1>
