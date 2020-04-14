@@ -65,7 +65,13 @@
 </figure>
 
 <p>
-  <strong>
-    I edited this file (src/routes/index.svelte) to test live reloading.
-  </strong>
+Well, technically, <b><i>I</i></b> made it. 
+But you have arrived on this page. 
+<br /> 
+I'm happy you're here. 
+Look at some quirky things that I've built.
+<br /> 
+Seriously, look around. 
+Make the most of it. 
+Life === Short!
 </p>
